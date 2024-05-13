@@ -11,31 +11,31 @@ The pattern can involve alphanumeric characters, shapes, etc. Also, it admires t
 4. The receptive field of the cells becomes bigger as we proceed to deeper layers.
 5. The number of cells in the layer decreases as we proceed to deeper layers.
 
-![structure.jpeg](structure.jpeg)
+![structure.jpeg](https://github.com/KrishJain256/BCS-Drowsiness-Detection/blob/master/structure.jpeg)
 
 ## Mathematics
 1. The output of an S-cell in the k-th S-plane of l-th module can be figured out to be
 
-![cell_output.jpeg](cell_output.jpeg)
+![cell_output.jpeg](https://github.com/KrishJain256/BCS-Drowsiness-Detection/blob/master/cell_output.jpeg)
 
 2. The inhibitory cell v<sub>C l-1 (n)</sub> having inhibitory synapsis to the S-cell have an r.m.s type of output shown below. This inhibitory cell connects the C cell of the previous layer to the S cell of the current one.
 
-![inhibitory_output.jpeg](inhibitory_output.jpeg)
+![inhibitory_output.jpeg](https://github.com/KrishJain256/BCS-Drowsiness-Detection/blob/master/inhibitory_output.jpeg)
 
 3. The C-cell output of the same layer in same module.
 
-![c-output.jpeg](c-output.jpeg)
+![c-output.jpeg](https://github.com/KrishJain256/BCS-Drowsiness-Detection/blob/master/c-output.jpeg)
 
 4. Now, we can illustrate the output of the inhibitory cell that connect the S cell of the current layer to the C cell of the same layer.
 
-![s to c inhibitory output.jpeg](s%20to%20c%20inhibitory%20output.jpeg)
+![s to c inhibitory output.jpeg](https://github.com/KrishJain256/BCS-Drowsiness-Detection/blob/master/s%20to%20c%20inhibitory%20output.jpeg)
 
 ## Self organisation of the Network
 Self organisation helps the model to recognize the patterns irrespective of change in position.
 #### Procedure
 1. In a S-layer, we watch a group of S cells. If the S planes are aligned to each other like a stack, we see that the receptive fields form a column structure.
 
-![columns.jpeg](columns.jpeg)
+![columns.jpeg](https://github.com/KrishJain256/BCS-Drowsiness-Detection/blob/master/columns.jpeg)
 
 2. From each S-column, the cell showing the largest output is chosen as a candidate for the representatives. If no candidate appears in a plane, no representative is selected.
 3. The input synapses to the representatives are reinforced.
@@ -46,13 +46,13 @@ Self organisation helps the model to recognize the patterns irrespective of chan
 1. Lets assume that the model has been self-organised and is shown patterns like "A","B",etc. repeatedly.
 2. So, now when we pass the pattern "A" again
 
-![visualize.jpeg](visualize.jpeg)
+![visualize.jpeg](https://github.com/KrishJain256/BCS-Drowsiness-Detection/blob/master/visualize.jpeg)
 
 3. Since the explanation now given in the paper was quite easy to comprehend, attaching the exact text.
 
-![exp1.jpeg](exp1.jpeg)
+![exp1.jpeg](https://github.com/KrishJain256/BCS-Drowsiness-Detection/blob/master/exp1.jpeg)
 
-![exp2.jpeg](exp2.jpeg)
+![exp2.jpeg](https://github.com/KrishJain256/BCS-Drowsiness-Detection/blob/master/exp2.jpeg)
 
 #### Optimization and Scalabiity
 Since, we need to detect a large number of patterns, we really do need to think about the scability of the algorithm. It comes out that, sicne the patterns would share common subpatterns like lines and arcs, it would be fine and the mechanism won't break for a larger set of characters, I mean patterns.
@@ -66,8 +66,8 @@ Since, we need to detect a large number of patterns, we really do need to think 
 
 Below is a mapping of the state of the last layer for different input patterns.
 
-![mapping.jpeg](mapping.jpeg)
+![mapping.jpeg](https://github.com/KrishJain256/BCS-Drowsiness-Detection/blob/master/mapping.jpeg)
 
 If we try to give "4" as the input pattern, the below image shows the progressive state of every layer.
 
-![try4.jpeg](try4.jpeg)
+![try4.jpeg](https://github.com/KrishJain256/BCS-Drowsiness-Detection/blob/master/try4.jpeg)
